@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Templates/layout.uss?fileID=7433441132597879392&amp;guid=05a16b8bcf013764280b41b1cc7212d0&amp;type=3#layout" />
+    <ui:VisualElement name="phone" style="background-color: rgb(255, 255, 255); height: 100%; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; width: 30%; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; padding-left: 8px; padding-right: 8px; padding-top: 8px; padding-bottom: 8px; -unity-background-image-tint-color: rgb(55, 55, 55); background-image: none; -unity-background-scale-mode: scale-and-crop;">
+        <ui:GroupBox name="data" style="flex-direction: row;">
+            <ui:Label text="This is my phone :)" display-tooltip-when-elided="true" />
+            <ui:Label text="13:30" display-tooltip-when-elided="true" name="Time" />
+            <ui:Label text="knifee" display-tooltip-when-elided="true" name="knife" />
+        </ui:GroupBox>
+        <ui:GroupBox name="msgBox" />
+        <ui:Button text="Button" display-tooltip-when-elided="true" class="incoming-msg" style="display: none; align-items: stretch; -unity-text-align: middle-left;" />
+        <ui:Button text="Button" display-tooltip-when-elided="true" class="choice outcoming-msg" style="display: none;" />
+        <ui:GroupBox name="choicesBox" style="position: absolute; left: 8px; bottom: 8px; width: 100%;" />
+    </ui:VisualElement>
+</ui:UXML>

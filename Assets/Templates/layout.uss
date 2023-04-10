@@ -1,0 +1,38 @@
+.button {
+    color: rgb(20, 97, 255);
+}
+
+.incoming-msg {
+    background-color: rgb(3, 151, 217);
+    color: rgb(255, 255, 255);
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 80%;
+    -unity-text-align: middle-left;
+}
+
+.outcoming-msg {
+    color: rgb(24, 173, 241);
+    border-left-color: rgb(68, 107, 246);
+    border-right-color: rgb(68, 107, 246);
+    border-top-color: rgb(68, 107, 246);
+    border-bottom-color: rgb(68, 107, 246);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(188, 188, 188, 0);
+    width: 80%;
+    left: 20%;
+    -unity-text-align: middle-left;
+}
