@@ -11,8 +11,9 @@ public class MainScript : MonoBehaviour
     [SerializeField] private TextAsset inkJSON;
     private Story story;
     public VisualElement phone;
-    private VisualElement view;
     private VisualElement choicesBox;
+
+    private ScrollView view;
 
     private bool hasKnife = false;
 
@@ -55,7 +56,7 @@ public class MainScript : MonoBehaviour
     private void OnEnable()
     {
         phone = GetComponent<UIDocument>().rootVisualElement.Q<VisualElement>("phone");
-        view = phone.Q<VisualElement>("msgBox");
+        view = phone.Q<ScrollView>("msgBox");
         choicesBox = phone.Q<VisualElement>("choicesBox");
     }
 
@@ -70,6 +71,12 @@ public class MainScript : MonoBehaviour
             GameObject.FindObjectOfType<PhoneSoundManager>().Bubble();
         }
         view.Add(newMsg);
+        StartCoroutine(scrollToBottom(newMsg));
+    }
+
+    private IEnumerator scrollToBottom(Button item) {
+        yield return new WaitForSeconds(0.1f);
+        view.ScrollTo(item);
     }
 
     private void choiceClicked(int index)
@@ -93,7 +100,7 @@ public class MainScript : MonoBehaviour
             choicesBox.Add(outgoing);
         }
     }
-
+    
     private int handleTags(List<string> tags)
     {
         int wait = 2;

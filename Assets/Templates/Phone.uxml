@@ -6,9 +6,9 @@
             <ui:Label text="13:30" display-tooltip-when-elided="true" name="Time" />
             <ui:Label text="knifee" display-tooltip-when-elided="true" name="knife" />
         </ui:GroupBox>
-        <ui:GroupBox name="msgBox" />
+        <ui:ScrollView scroll-deceleration-rate="2.12" elasticity="0,1" name="msgBox" touch-scroll-type="Unrestricted" vertical-scroller-visibility="Hidden" focusable="false" horizontal-scroller-visibility="Hidden" style="min-height: auto; max-height: 70%; height: 70%;" />
         <ui:Button text="Button" display-tooltip-when-elided="true" class="incoming-msg" style="display: none; align-items: stretch; -unity-text-align: middle-left;" />
         <ui:Button text="Button" display-tooltip-when-elided="true" class="choice outcoming-msg" style="display: none;" />
-        <ui:GroupBox name="choicesBox" style="position: absolute; left: 8px; bottom: 8px; width: 100%;" />
+        <ui:GroupBox name="choicesBox" style="position: absolute; left: 8px; bottom: 8px; width: 100%; height: 20%;" />
     </ui:VisualElement>
 </ui:UXML>
