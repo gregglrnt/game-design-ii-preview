@@ -12,6 +12,7 @@ public class PhoneUIManager : MonoBehaviour {
     private void Start() {
         mainScript = GameObject.FindObjectOfType<MainScript>();
         timeLabel = mainScript.phone.Q<Label>("Time");
+
     }
 
     void Update()
