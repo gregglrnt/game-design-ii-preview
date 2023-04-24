@@ -2,7 +2,7 @@
     color: rgb(20, 97, 255);
 }
 
-.incoming-msg {
+.you-msg {
     background-color: rgb(3, 151, 217);
     color: rgb(255, 255, 255);
     border-left-color: rgba(149, 149, 149, 0);
@@ -21,7 +21,7 @@
     -unity-text-align: middle-left;
 }
 
-.outcoming-msg {
+.me-msg {
     color: rgb(24, 173, 241);
     border-left-color: rgb(68, 107, 246);
     border-right-color: rgb(68, 107, 246);
