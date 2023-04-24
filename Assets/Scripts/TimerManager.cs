@@ -5,18 +5,30 @@ public class TimerManager : MonoBehaviour
     private int seconds = 0;
     private bool timerStarted = false;
 
-    private const int SHUTTING_DOWN_TIME = 120;
+    private const int SHUTTING_DOWN_TIME = 75;
 
+    private const int END_TIME = 180;
+
+    private PhoneController gameManager;
+
+    void Start() {
+        gameManager = GameObject.FindObjectOfType<PhoneController>();
+    }
 
     void Update()
     {
         if (timerStarted && Time.time > seconds)
         {
             seconds += 1;
-            if(seconds == SHUTTING_DOWN_TIME)
+            if (seconds == SHUTTING_DOWN_TIME)
             {
                 Debug.Log("Lights are shutting down");
-                GameObject.FindObjectOfType<MainScript>().shutDownLights();
+                gameManager.coloc.shutDownLights();
+            }
+            if (seconds == END_TIME)
+            {
+                Debug.Log("Game Over");
+                gameManager.police.policeIsComing();
             }
         }
     }

@@ -37,7 +37,38 @@
     -unity-text-align: middle-left;
 }
 
+.police > .me-msg {
+    color: rgb(255, 139, 139);
+    border-color: rgb(255, 139, 139);
+}
+
+.police > .you-msg {
+    background-color: rgb(255, 139, 139);
+    border-color: rgb(255, 139, 139);
+}
+
 .unity-scroller__slider {
     max-width: 20px;
     width: 20px;
+}
+
+.choices {
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.msgBox {
+    flex-shrink: 0;
+    flex-grow: 2;
+    max-height: none;
+    min-height: 70%;
+    min-width: 100%;
+}
+
+.screen {
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+    flex-grow: 1;
+    opacity: 1;
 }

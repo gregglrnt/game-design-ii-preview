@@ -4,14 +4,18 @@ using UnityEngine.UIElements;
 
 public class PhoneUIManager : MonoBehaviour {
     
-    private MainScript mainScript; 
     private Label timeLabel;
+    private PhoneController gameManager;
+
+    private GameController gameController;
 
     private float timePassed = 5f;
 
     private void Start() {
-        mainScript = GameObject.FindObjectOfType<MainScript>();
-        timeLabel = mainScript.phone.Q<Label>("Time");
+        // refacto this with global interface
+        // gameManager = GameObject.FindObjectOfType<GameManager>();
+        // gameController = GameObject.FindObjectOfType<ColocController>();
+        // timeLabel = gameController.phone.Q<Label>("Time");
     }
 
     void Update()
@@ -25,7 +29,7 @@ public class PhoneUIManager : MonoBehaviour {
     }
 
     void UpdateTime() {
-        timeLabel.text = DateTime.Now.ToString("HH:mm");
+        //timeLabel.text = DateTime.Now.ToString("HH:mm");
     }
 
 

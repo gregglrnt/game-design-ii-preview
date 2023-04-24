@@ -6,9 +6,17 @@
             <ui:Label text="13:30" display-tooltip-when-elided="true" name="Time" />
             <ui:Label text="knifee" display-tooltip-when-elided="true" name="knife" />
         </ui:GroupBox>
-        <ui:ScrollView scroll-deceleration-rate="2.12" elasticity="0,1" name="msgBox" touch-scroll-type="Unrestricted" vertical-scroller-visibility="Hidden" focusable="false" horizontal-scroller-visibility="Hidden" style="min-height: auto; max-height: 70%; height: 70%;" />
-        <ui:Button text="Button" display-tooltip-when-elided="true" class="me-msg" style="display: none; align-items: stretch; -unity-text-align: middle-left;" />
-        <ui:Button text="Button" display-tooltip-when-elided="true" class="choice outcoming-msg you-msg" style="display: none;" />
-        <ui:GroupBox name="choicesBox" style="position: absolute; left: 8px; bottom: 8px; width: 100%; height: 20%;" />
+        <ui:GroupBox name="colocScreen" class="screen" style="flex-grow: 1; border-left-color: rgb(11, 250, 68); border-right-color: rgb(11, 250, 68); border-top-color: rgb(11, 250, 68); border-bottom-color: rgb(11, 250, 68); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px;">
+            <ui:ScrollView scroll-deceleration-rate="2.12" elasticity="0,1" name="colocBox" touch-scroll-type="Unrestricted" vertical-scroller-visibility="Hidden" focusable="false" horizontal-scroller-visibility="Hidden" class="msgBox" style="min-height: auto; max-height: none; height: auto; visibility: visible; border-left-color: rgba(32, 219, 208, 255); border-right-color: rgba(32, 219, 208, 255); border-top-color: rgba(32, 219, 208, 255); border-bottom-color: rgba(32, 219, 208, 255); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px;" />
+            <ui:GroupBox class="choices" style="position: relative; left: 8px; bottom: 8px; width: auto; height: auto;" />
+        </ui:GroupBox>
+        <ui:GroupBox name="policeScreen" class="screen" style="flex-grow: 1; position: absolute; left: 8px; top: 15%; height: 80%; width: 100%;">
+            <ui:ScrollView scroll-deceleration-rate="2.12" elasticity="0,1" name="policeBox" touch-scroll-type="Unrestricted" vertical-scroller-visibility="Hidden" focusable="false" horizontal-scroller-visibility="Hidden" class="msgBox" style="min-height: auto; max-height: none; height: auto; visibility: visible;" />
+            <ui:GroupBox class="choices" style="position: relative; left: 8px; bottom: 8px; width: auto; height: auto;" />
+        </ui:GroupBox>
+    </ui:VisualElement>
+    <ui:VisualElement name="Toggle" style="position: absolute; left: 55%; top: 0; height: 100%; justify-content: center;">
+        <ui:Button text="police" display-tooltip-when-elided="true" name="policeButton" />
+        <ui:Button text="coloc" display-tooltip-when-elided="true" name="colocButton" />
     </ui:VisualElement>
 </ui:UXML>

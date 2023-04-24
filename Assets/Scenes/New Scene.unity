@@ -452,9 +452,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1022163323}
   - component: {fileID: 1022163322}
+  - component: {fileID: 1022163326}
   - component: {fileID: 1022163324}
+  - component: {fileID: 1022163325}
   m_Layer: 5
-  m_Name: ColocScene
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -500,11 +502,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 1022163321}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae0dec0588cc3194a890e0215882e9f6, type: 3}
+  m_Script: {fileID: 11500000, guid: 4114e37580a594b41a4c89a9d1c47d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkJSON: {fileID: 4900000, guid: 15015fe10ea1d1d459ffca610732d839, type: 3}
+--- !u!114 &1022163325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022163321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25933a56257db914f80381d3436c8a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inkJSON: {fileID: 4900000, guid: ec94b1c5373354b4f843543997bedb54, type: 3}
   currentRoom: 0
+--- !u!114 &1022163326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022163321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4e8a9d210bd39644a62b8299496efc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coloc: {fileID: 0}
+  police: {fileID: 0}
 --- !u!1 &1331722677
 GameObject:
   m_ObjectHideFlags: 0
