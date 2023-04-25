@@ -28,15 +28,15 @@ public class PhoneController : MonoBehaviour {
 
     public void openColoc() {
         Debug.Log("openColoc");
-        police.view.style.opacity = 0;
-        coloc.view.style.opacity = 1;
+        police.view.style.display = DisplayStyle.None;
+        coloc.view.style.display = DisplayStyle.Flex;
 
     }
 
     public void openPolice() {
         Debug.Log("openPolice");
-        coloc.view.style.opacity = 0;
-        police.view.style.opacity = 1;
+        coloc.view.style.display = DisplayStyle.None;
+        police.view.style.display = DisplayStyle.Flex;
     }
 
 }

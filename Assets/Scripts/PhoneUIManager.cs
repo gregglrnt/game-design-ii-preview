@@ -16,6 +16,7 @@ public class PhoneUIManager : MonoBehaviour {
         // gameManager = GameObject.FindObjectOfType<GameManager>();
         // gameController = GameObject.FindObjectOfType<ColocController>();
         // timeLabel = gameController.phone.Q<Label>("Time");
+
     }
 
     void Update()

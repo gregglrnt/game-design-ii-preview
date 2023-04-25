@@ -31,7 +31,9 @@ public abstract class GameController : MonoBehaviour
         phone = GetComponent<UIDocument>().rootVisualElement.Q<VisualElement>("phone");
         initializeInterface();
         scrollView = view.Q<ScrollView>();
-        choicesBox = view.Q<GroupBox>();
+        Debug.Log(scrollView);
+        choicesBox = view.Q<GroupBox>(className: "choices");
+        Debug.Log(choicesBox);
         Sounds = GameObject.FindObjectOfType<PhoneSoundManager>();
         story = new Story(inkJSON.text);
     }
@@ -95,6 +97,7 @@ public abstract class GameController : MonoBehaviour
 
     protected void choiceClicked(int index)
     {
+        Debug.Log("has clicked " + index);
         choicesBox.Clear();
         Sounds.stopType();
         story.ChooseChoiceIndex(index);
