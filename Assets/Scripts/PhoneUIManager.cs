@@ -9,7 +9,7 @@ public class PhoneUIManager : MonoBehaviour {
 
     private GameController gameController;
 
-    private ProgressBar battery;
+    // private ProgressBar battery;
 
     private float timePassed = 5f;
 
@@ -18,7 +18,7 @@ public class PhoneUIManager : MonoBehaviour {
         //gameManager = GameObject.FindObjectOfType<GameManager>();
         gameController = GameObject.FindObjectOfType<ColocController>();
         timeLabel = gameController.phone.Q<Label>("Time");
-        battery = gameController.phone.Q<ProgressBar>("ProgressBar");
+        //battery = gameController.phone.Q<ProgressBar>("ProgressBar");
 
     }
 
@@ -27,17 +27,17 @@ public class PhoneUIManager : MonoBehaviour {
         timePassed += Time.deltaTime;
         if (timePassed >= 5f)
         {
-            //UpdateTime();
-            UpdateBattery();
+            UpdateTime();
+            //UpdateBattery();
             timePassed = 0f;
         }
     }
 
-    /*void UpdateTime() {
-        timeLabel.text = DateTime.Now.ToString("HH:mm");
-    }*/
+    void UpdateTime() {
+        //timeLabel.text = DateTime.Now.ToString("HH:mm");
+    }
 
-    void UpdateBattery()
+    /*void UpdateBattery()
     {
         float lifeBattery = battery.highValue;
 
@@ -45,7 +45,7 @@ public class PhoneUIManager : MonoBehaviour {
         {
             lifeBattery -= Time.deltaTime;
         }
-    }
+    }*/
 
 
 }

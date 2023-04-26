@@ -86,7 +86,7 @@
     background-color: rgb(128, 128, 255);
 }
 
-.unity-button-police:active {
+.unity-button-police:focus {
     background-color: rgb(128, 128, 255);
 }
 
@@ -94,6 +94,6 @@
     background-color: rgb(255, 51, 153);
 }
 
-.unity-button-coloc:active {
+.unity-button-coloc:focus {
     background-color: rgb(255, 51, 153);
 }
