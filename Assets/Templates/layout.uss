@@ -78,6 +78,22 @@
 }
 
 .unity-progress-bar__container {
-    background-color: rgba(228, 228, 228, 255)
+    background-color: rgba(228, 228, 228, 255);
 }
 
+
+.unity-button-police:hover {
+    background-color: rgb(128, 128, 255);
+}
+
+.unity-button-police:active {
+    background-color: rgb(128, 128, 255);
+}
+
+.unity-button-coloc:hover {
+    background-color: rgb(255, 51, 153);
+}
+
+.unity-button-coloc:active {
+    background-color: rgb(255, 51, 153);
+}
