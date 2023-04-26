@@ -17,8 +17,6 @@ public class MainScript : MonoBehaviour
 
     private ScrollView view;
 
-    private bool hasKnife = false;
-
     private const string SPEAKER_TAG = "speaker";
     private const string WAITING_TAG = "waiting";
 
