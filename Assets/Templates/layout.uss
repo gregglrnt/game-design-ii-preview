@@ -2,7 +2,11 @@
     color: rgb(20, 97, 255);
 }
 
-.you-msg, .me-msg {
+.you-msg {
+    white-space: normal;
+}
+
+.me-msg {
     white-space: normal;
 }
 
@@ -54,12 +58,13 @@
 .choices {
     flex-shrink: 0;
     flex-grow: 1;
+    min-height: 20%;
 }
 
 .msgBox {
     flex-shrink: 0;
     flex-grow: 2;
-    max-height: none;
+    max-height: 70%;
     min-height: 70%;
     min-width: 100%;
 }
@@ -70,6 +75,7 @@
     flex-shrink: 0;
     flex-grow: 1;
     opacity: 1;
+    max-height: 100%;
 }
 
 .unity-progress-bar__progress {
@@ -78,6 +84,5 @@
 }
 
 .unity-progress-bar__container {
-    background-color: rgba(228, 228, 228, 255)
+    background-color: rgb(228, 228, 228);
 }
-

@@ -24,6 +24,7 @@ public class TimerManager : MonoBehaviour
             {
                 Debug.Log("Lights are shutting down");
                 gameManager.coloc.shutDownLights();
+                gameManager.police.launch();
             }
             if (seconds == END_TIME)
             {

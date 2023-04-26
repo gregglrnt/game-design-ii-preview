@@ -97,7 +97,6 @@ public abstract class GameController : MonoBehaviour
 
     protected void choiceClicked(int index)
     {
-        Debug.Log("has clicked " + index);
         choicesBox.Clear();
         Sounds.stopType();
         story.ChooseChoiceIndex(index);
@@ -106,7 +105,7 @@ public abstract class GameController : MonoBehaviour
 
     protected void pushChoices(List<Choice> choices)
     {
-        Sounds.type();
+        if(choices.Count > 1) Sounds.type();
         foreach (Choice choice in choices)
         {
             Button outgoing = new Button();
